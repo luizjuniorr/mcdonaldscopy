@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./logingarcom.css">
+    <link rel="shortcut icon" href="../../assets/mcdonalds.png" type="image/x-icon">
+    <title>McDonald's</title>
+</head>
+
+<body>
+    <main>
+        <a href="../../index.html"><- Voltar</a>
+                <div class="logo">
+                    <img src="../../assets/mcdonalds.png" alt="McDonald's">
+
+                    <div class="titulo">
+
+                        <div class="icon">
+                            <div>
+                                <img src="../../assets/chef_marrom.png" alt="Usuario" class="userpreto">
+                            </div>
+                        </div>
+
+                        <h1>Bem-Vindo!</h1>
+                    </div>
+
+                    <p>Acesso exclusivo para funcionários</p>
+                </div>
+
+                <form action="">
+                    <label for="email">E-mail</label>
+                    <input type="email" placeholder="garcom@mcdonalds.com" id="email">
+
+                    <label for="senha">Senha</label>
+                    <input type="password" placeholder="Digite sua senha" id="senha">
+
+                    <button onclick="
+                    if(document.getElementById('email').value.trim() === 'garcom@mcdonalds.com' && document.getElementById('senha').value.trim() === 'garcom123') {
+                        window.location.href = '../cardapio/cardapio.html';
+                    } else {
+                        alert('login incorreto.');
+                    }
+                    " type="button">Continuar</button>
+
+                </form>
+
+                <a href="" class="esqueceusuasenha">Esqueceu sua senha?</a>
+
+    </main>
+
+    <p>© 2026 McDonald's. Todos os direitos reservados.</p>
+</body>
+
+</html>

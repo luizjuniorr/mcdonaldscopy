@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./cardapio.css">
+    <link rel="shortcut icon" href="../../assets/mcdonalds.png" type="image/x-icon">
+    <script src="./cardapio.js" defer></script>
+    <title>McDonald's</title>
+</head>
+
+<body>
+    <div class="left">
+        <header>
+            <div class="headerprincipal">
+                <div class="headertopo">
+                    <div class="titulo">
+                        <img src="../../assets/mcdonalds.png" alt="McDonald's">
+                        <div>
+                            <h1>McDonald's</h1>
+                            <p>Faça seu pedido</p>
+                        </div>
+                    </div>
+
+                    <button class="sair"><img src="../../assets/exit.png" alt=""
+                            onclick="window.location.href='../../index.html'"> Sair</button>
+                </div>
+
+                <form class="busca">
+                    <img src="../../assets/search.png" alt="Buscar">
+                    <input type="text" placeholder="Buscar produtos...">
+                </form>
+
+                <div class="filtros">
+                    <button type="button" class="btodos">🍔 Todos</button>
+                    <button type="button" class="blanches">🍔 Lanches</button>
+                    <button type="button" class="bcombos">🍟 Combos</button>
+                    <button type="button" class="bacompanhamentos">🍟 Acompanhamentos</button>
+                    <button type="button" class="bbebidas">🥤 Bebidas</button>
+                    <button type="button" class="bmilkshakes">🥤 Milk-shakes</button>
+                    <button type="button" class="bofertas">🎉 Ofertas do Dia</button>
+                </div>
+
+            </div>
+
+            <div class="outrosbotoes">
+                <button class="carrinho"><img src="../../assets/cart.png" alt=""></button>
+            </div>
+        </header>
+
+        <main>
+            <div class="lista-itens">
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 4,99</p>
+                        <img src="../../assets/lanches/Acompanhamentos/Acompanhamento_tomatinho.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Tomatinho</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 7,99</p>
+                        <img src="../../assets/lanches/Acompanhamentos/Acompanhamento_Molho Blister Cogumelo.png"
+                            alt="${item.nome}">
+                    </div>
+
+                    <h2>Molho Blister Cogumelo</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 3,99</p>
+                        <img src="../../assets/lanches/Acompanhamentos/Acompanhamento_Molho Blister.png"
+                            alt="${item.nome}">
+                    </div>
+
+                    <h2>Molho Blister</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 14,99</p>
+                        <img src="../../assets/lanches/Acompanhamentos/Acompanhamento_Piscininha Cheddar.png"
+                            alt="${item.nome}">
+                    </div>
+
+                    <h2>Piscininha Cheddar</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 12,00</p>
+                        <img src="../../assets/lanches/bebidas/bebidas_cocacola.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Coca Cola</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 15,00</p>
+                        <img src="../../assets/lanches/bebidas/bebidas_delvalleuva.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Suco del valle</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 06,00</p>
+                        <img src="../../assets/lanches/bebidas/bebidas_fanta.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Fanta</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 07,00</p>
+                        <img src="../../assets/lanches/bebidas/bebidas_sprite.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Sprite</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 35,00</p>
+                        <img src="../../assets/lanches/combos/combo_supermario.avif" alt="${item.nome}">
+                    </div>
+
+                    <h2>Combo Super Mario</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 25,00</p>
+                        <img src="../../assets/lanches/combos/combo_4pequenos.avif" alt="${item.nome}">
+                    </div>
+
+                    <h2>Combo 4 Pequenos</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 60,00</p>
+                        <img src="../../assets/lanches/combos/combo_figurinhafamiliatasty.avif" alt="${item.nome}">
+                    </div>
+
+                    <h2>Combo Figurinha Família Tasty</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 7,00</p>
+                        <img src="../../assets/lanches/combos/combo_mccrispy.avif" alt="${item.nome}">
+                    </div>
+
+                    <h2>Combo MC Crispy</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 35,00</p>
+                        <img src="../../assets/lanches/Lanches/Lanche_Big Mac.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Big Mac</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 40,00</p>
+                        <img src="../../assets/lanches/Lanches/lanche_brabo club house.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Brabo Club House</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 23,00</p>
+                        <img src="../../assets/lanches/Lanches/Lanche_Cheddar Mcmelt.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Cheddar Mcmelt</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 25,00</p>
+                        <img src="../../assets/lanches/Lanches/Lanches_ Duplo Cheddar .png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Duplo Cheddar</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 12,00</p>
+                        <img src="../../assets/lanches/milkshake/milkshake_blueberry.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Milk-Shake Blueberry</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 12,00</p>
+                        <img src="../../assets/lanches/milkshake/milkshake_blueberry.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Milk-Shake Konpenhagen</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 12,00</p>
+                        <img src="../../assets/lanches/milkshake/milkshake_morango.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Milk-Shake Morango</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 12,00</p>
+                        <img src="../../assets/lanches/milkshake/milkshake_ovomaltine.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Milk-Shake Ovolmaltine</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 6,00</p>
+                        <img src="../../assets/lanches/ofertas/ofertas_cafe.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Café</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 06,00</p>
+                        <img src="../../assets/lanches/ofertas/ofertas_cafecomleite.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Café com Leite</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 06,00</p>
+                        <img src="../../assets/lanches/ofertas/ofertas_chocolatequente.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Chocolate quente</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+                <div class="item">
+                    <div class="imagem">
+                        <p>R$ 06,00</p>
+                        <img src="../../assets/lanches/ofertas/ofertas_capuccino.png" alt="${item.nome}">
+                    </div>
+
+                    <h2>Capuccino</h2>
+                    <p>Descrição</p>
+                    <button>+ Adicionar</button>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <div class="right">
+        <div>
+            <p>meu carrinho</p>
+        </div>
+    </div>
+</body>
+
+</html>
