@@ -28,8 +28,8 @@
                         </div>
                     </div>
 
-                    <button class="sair"><img src="../../assets/exit.png" alt=""
-                            onclick="window.location.href='../../index.html'"> Sair</button>
+                    <button onclick="window.location.href='../../index.html'" class="sair"><img
+                            src="../../assets/exit.png" alt=""> Sair</button>
                 </div>
 
                 <form class="busca">
@@ -338,9 +338,27 @@
     </div>
 
     <div class="right">
-        <div>
-            <p>meu carrinho</p>
+        <div class="topocarrinho">
+            <div class="meucarrinho">
+                <div class="headermeucarrinho">
+                    <img src="../../assets/cart.png" alt="Carrinho Branco">
+                    <h2>Meu Carrinho</h2>
+                </div>
+                <div class="botaox">
+                    <img src="../../assets/x.png" alt="Sair">
+                </div>
+            </div>
+            <div class="contador">
+                <p>0 itens</p>
+            </div>
         </div>
+
+        <div class="conteudovazio">
+            <img src="../../assets/cart_cinza.png" alt="Carrinho Cinza">
+            <h2> Seu carrinho está vazio</h2>
+            <p>Adicione itens do menu!</p>
+        </div>
+
     </div>
 </body>
 
