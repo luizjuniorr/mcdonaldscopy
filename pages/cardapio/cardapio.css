@@ -17,6 +17,8 @@
     --fundocard-amarelo: #fefbe2;
     --fundocard-red: #ffecec;
 
+    --vermelho-hover: #c10007;
+
     --arial: "Arial", sans-serif;
     --roboto: "Roboto", sans-serif;
     --noto-sans: "Noto Sans", sans-serif;
@@ -25,7 +27,6 @@
 
 header {
     width: 100%;
-    border: 1px solid red;
     height: 192px;
     padding-inline: 6px;
     background: var(--branco);
@@ -275,10 +276,17 @@ main {
     display: none;
 }
 
+.right {
+    display: none;
+}
+
 .right.aberto {
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     right: 0;
+    box-shadow: -10px 0 20px rgba(0, 0, 0, 0.3);
 
     width: 100%;
     height: 100vh;
@@ -294,7 +302,19 @@ main {
     justify-content: space-around;
     height: 80px;
     background-color: var(--vermelho);
-     
+    padding-inline: 10px;
+}
+
+.topocarrinho .botaox button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 100px;
+}
+
+.topocarrinho .botaox button:hover{
+    background: var(--vermelho-hover);
 }
 
 
@@ -346,6 +366,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: #FFFFFF;
     height: 100dvh;
     gap: 10px;
   
@@ -369,6 +390,133 @@ main {
     }
 }
 
+.itemnocarrinho {
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 12px;
+    margin: 15px;
+
+    && h2 {
+        font-family: var(--noto-sans);
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+
+.itemnocarrinho .fotolanchecarrinho img{
+    height: 100px;
+}
+
+.itemnocarrinho .informacoeslanchecarrinho {
+    display: flex;
+    flex-direction: column;
+    margin-block: auto;
+    gap: 5px;
+
+    && > p {
+        color: var(--vermelho);
+    }
+}
+
+.itemnocarrinho .informacoeslanchecarrinho div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    && button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: var(--noto-sans);
+        font-size: 22px;
+
+        background: var(--branco);
+        border: 1px solid var(--cinza-claro);
+        color: var(--preto);
+        border-radius: 5px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.itemnocarrinho .deletarlanchecarrinho{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5px;
+}
+
+.itemnocarrinho .deletarlanchecarrinho button {
+    background: none;
+    border: none;
+
+    && img {
+        height: 20px;
+    }
+}
+
+.total{
+    margin-top: auto;
+    padding-bottom: 20px;
+    border-top: 1px solid var(--cinza-claro);
+    padding-top: 10px;
+}
+
+.total .valor {
+    display: flex;
+    width: 100%;
+    padding-inline: 15px;
+    justify-content: space-between;
+    font-family: var(--noto-sans);
+
+    && .ptotal {
+        color: var(--preto);
+        font-size: 18px;
+    }
+
+    && .pvalor {
+        color: var(--vermelho);
+        font-size: 20px;
+    }
+}
+
+.finalizacao {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    
+    && button {
+        font-family: var(--roboto);
+        font-weight: 400;
+        font-size: 18px;
+        width: 100%;
+        margin-inline: 15px;
+        margin-top: 5px;
+        height: 40px;
+        border: none;
+        color: var(--branco);
+        background: var(--vermelho);
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.finalizarpedido {
+    display: none;
+}
+
+.finalizarpedido.aberto {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 9999999999;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: var(--branco);
+}
 
 @media (min-width: 1100px) {
     body.aberto {
@@ -381,7 +529,6 @@ main {
     }
 
     .right.aberto {
-        background: black;
         width: 20%;
         height: 100%;
         z-index: 9999;
@@ -395,4 +542,3 @@ main {
         padding-inline: 100px;
     }
 }
-

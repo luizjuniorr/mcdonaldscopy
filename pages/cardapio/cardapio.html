@@ -345,7 +345,7 @@
                     <h2>Meu Carrinho</h2>
                 </div>
                 <div class="botaox">
-                    <img src="../../assets/x.png" alt="Sair">
+                    <button class="botaofecharcarrinho"><img src="../../assets/x.png" alt="Sair"></button>
                 </div>
             </div>
             <div class="contador">
@@ -353,12 +353,43 @@
             </div>
         </div>
 
-        <div class="conteudovazio">
+        <div class="itensadicionados">
+            <div class="itemnocarrinho">
+                <div class="fotolanchecarrinho"><img src="../../assets/lanches/Lanches/Lanche_Big Mac.png" alt=""></div>
+                <div class="informacoeslanchecarrinho">
+                    <h2>Cheddar McMelt</h2>
+                    <p>R$ 21,90</p>
+                    <div>
+                        <button>-</button>
+                        <p>1</p>
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="deletarlanchecarrinho"><button><img src="../../assets/lixeira.png" alt=""></button></div>
+            </div>
+        </div>
+
+        <div class="conteudovazio" style="display: none;">
             <img src="../../assets/cart_cinza.png" alt="Carrinho Cinza">
             <h2> Seu carrinho está vazio</h2>
             <p>Adicione itens do menu!</p>
         </div>
 
+        <div class="total">
+            <div class="valor">
+                <p class="ptotal">Total:</p>
+                <p class="pvalor">R$ 21.90</p>
+            </div>
+
+            <div class="finalizacao"><button onclick="abrirPaginaDeFinalizarPedido()">Finalizar Pedidos</button></div>
+        </div>
+
+        
+    </div>
+
+
+    <div class="finalizarpedido">
+        <p onclick="fecharPaginaDeFinalizarPedido()">sair</p>
     </div>
 </body>
 

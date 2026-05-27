@@ -1,0 +1,5 @@
+function guardarNome(){
+    const nome = document.getElementById('nome').value
+
+    localStorage.setItem("nome", nome)
+}

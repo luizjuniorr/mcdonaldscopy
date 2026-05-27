@@ -159,3 +159,25 @@ botaoCarrinho.addEventListener("click", () => {
     right.classList.add("aberto")
     header.classList.add("aberto")
 })
+
+const botaoFecharCarrinho = document.querySelector(".botaofecharcarrinho")
+
+botaoFecharCarrinho.addEventListener("click", () => {
+    const right = document.querySelector(".right")
+    const body = document.querySelector("body")
+    const header = document.querySelector("header")
+
+    body.classList.remove("aberto")
+    right.classList.remove("aberto")
+    header.classList.remove("aberto")
+})
+
+const finalizarpedido = document.querySelector(".finalizarpedido")
+
+function abrirPaginaDeFinalizarPedido(){
+    finalizarpedido.classList.add("aberto")
+}
+
+function fecharPaginaDeFinalizarPedido(){
+    finalizarpedido.classList.remove("aberto")
+}

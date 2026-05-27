@@ -10,6 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./logincliente.css">
+    <script src="./logincliente.js" defer></script>
     <link rel="shortcut icon" href="../../assets/mcdonalds.png" type="image/x-icon">
     <title>McDonald's</title>
 </head>
@@ -42,6 +43,7 @@
                     if(document.getElementById('nome').value.trim() === '') {
                         alert('Por favor, digite seu nome para continuar.');
                     } else {
+                        guardarNome()
                         window.location.href = '../cardapio/cardapio.html';
                     }
                     " type="button">Continuar</button>
