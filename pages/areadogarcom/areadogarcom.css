@@ -1,0 +1,336 @@
+/* ==========================================
+   CONFIGURAÇÕES GERAIS E VARIÁVEIS (:ROOT)
+   ========================================== */
+:root {
+    /* Cores de Fundo e Texto Principais */
+    --cor-fundo-tela: #f9fafb;
+    --cor-texto-principal: #111827;
+    --cor-texto-secundario: #4b5563;
+    --cor-texto-suave: #6b7280;
+    --cor-borda: #e5e7eb;
+    
+    /* Identidade Visual (McDonald's) */
+    --amarelo-primario: #eab308;
+    --amarelo-escuro: #ca8a04;
+    --amarelo-texto-botao: #a16207;
+    --amarelo-fundo-suave: #fef08a;
+    --vermelho-mcdonalds: #DA291C;
+
+    /* Gradientes dos Cards de Resumo (Substitutos do .bg-blue, etc) */
+    --gradiente-pedidos: linear-gradient(to bottom right, #3b82f6, #2563eb);
+    --texto-pedidos: #dbeafe;
+    
+    --gradiente-pendentes: linear-gradient(to bottom right, #22c55e, #16a34a);
+    --texto-pendentes: #dcfce7;
+    
+    --gradiente-total: linear-gradient(to bottom right, #a855f7, #9333ea);
+    --texto-total: #f3e8ff;
+    
+    --gradiente-vendas: linear-gradient(to bottom right, #f97316, #ea580c);
+    --texto-vendas: #ffedd5;
+
+    /* Cores de Status (Badges e Caixas de Info) */
+    --status-novo: #ef4444;
+    --status-preparando: #f97316;
+    --status-pronto: #22c55e;
+    --status-entregue: #9333ea;
+    --fundo-azul-entrega: #eff6ff;
+    --texto-azul-entrega: #1e3a8a;
+    --fundo-verde-pagamento: #f0fdf4;
+    --texto-verde-pagamento: #14532d;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: var(--cor-fundo-tela);
+    color: var(--cor-texto-principal);
+    min-height: 100vh;
+}
+
+.limitador-largura {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+/* ==========================================
+   TOPO DA PÁGINA (HEADER)
+   ========================================== */
+.topo-pagina {
+    background: linear-gradient(to right, var(--amarelo-primario), var(--amarelo-escuro));
+    color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+}
+
+.conteudo-topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+}
+
+.topo-pagina h1 {
+    font-size: 1.875rem;
+    font-weight: 700;
+}
+
+.topo-pagina p {
+    font-size: 0.875rem;
+    color: var(--amarelo-fundo-suave);
+}
+
+/* ==========================================
+   BOTÕES (ESTILOS BASE E VARIANTES)
+   ========================================== */
+.botao {
+    inline-size: max-content;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border: 1px solid transparent;
+}
+
+.botao-sair {
+    background-color: #ffffff;
+    color: var(--amarelo-texto-botao);
+}
+
+.botao-sair:hover {
+    background-color: var(--amarelo-fundo-suave);
+}
+
+.botao-aceitar { background-color: #16a34a; color: #ffffff; }
+.botao-aceitar:hover { background-color: #15803d; }
+
+.botao-cancelar { border-color: #ef4444; color: #dc2626; background: transparent; }
+.botao-cancelar:hover { background-color: #fef2f2; }
+
+.botao-pronto { background-color: #2563eb; color: #ffffff; }
+.botao-pronto:hover { background-color: #1d4ed8; }
+
+.botao-entregue { background-color: var(--status-entregue); color: #ffffff; }
+.botao-entregue:hover { background-color: #7e22ce; }
+
+/* ==========================================
+   ÁREA PRINCIPAL E BOAS-VINDAS
+   ========================================== */
+.conteudo-principal {
+    padding: 32px 0;
+}
+
+.bloco-boas-vindas {
+    margin-bottom: 32px;
+}
+
+.bloco-boas-vindas h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.bloco-boas-vindas p {
+    color: var(--cor-texto-secundario);
+}
+
+/* ==========================================
+   CARDS DE RESUMO / ESTATÍSTICAS
+   ========================================== */
+.grade-resumos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.card-resumo {
+    padding: 24px;
+    border-radius: 12px;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.topo-card-resumo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.topo-card-resumo i { font-size: 1.875rem; opacity: 0.9; }
+.topo-card-resumo .valor-indicador { font-size: 1.875rem; font-weight: 700; }
+.card-resumo p { font-size: 0.875rem; font-weight: 500; }
+
+/* Vinculando as cores específicas via variáveis aos cards de resumo */
+.card-resumo-pedidos { background: var(--gradiente-pedidos); }
+.card-resumo-pedidos p { color: var(--texto-pedidos); }
+
+.card-resumo-pendentes { background: var(--gradiente-pendentes); }
+.card-resumo-pendentes p { color: var(--texto-pendentes); }
+
+.card-resumo-total { background: var(--gradiente-total); }
+.card-resumo-total p { color: var(--texto-total); }
+
+.card-resumo-vendas { background: var(--gradiente-vendas); }
+.card-resumo-vendas p { color: var(--texto-vendas); }
+
+/* ==========================================
+   SEÇÃO DE LISTAGEM DE PEDIDOS
+   ========================================== */
+.topo-lista-pedidos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.topo-lista-pedidos h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+/* Etiquetas / Badges de Status */
+.etiqueta-status {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    width: fit-content;
+    color: #ffffff;
+}
+
+.etiqueta-contador { background-color: #ffffff; color: #374151; border: 1px solid var(--cor-borda); }
+.etiqueta-novo { background-color: var(--status-novo); }
+.etiqueta-preparando { background-color: var(--status-preparando); }
+.etiqueta-pronto { background-color: var(--status-pronto); }
+
+.lista-pedidos {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Card Individual de Pedido */
+.card-pedido {
+    background-color: #ffffff;
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--cor-borda);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    transition: box-shadow 0.2s;
+}
+
+.card-pedido:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.topo-card-pedido {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.bloco-info-pedido {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex: 1;
+}
+
+.icone-pedido-circulo {
+    padding: 12px;
+    background-color: var(--amarelo-fundo-suave);
+    border-radius: 9999px;
+    color: var(--amarelo-texto-botao);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone-pedido-circulo i { font-size: 1.25rem; }
+
+.detalhes-pedido { flex: 1; }
+.linha-titulo-pedido { display: flex; align-items: center; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
+.linha-titulo-pedido h4 { font-size: 1.125rem; font-weight: 500; color: var(--cor-texto-principal); }
+.detalhes-pedido .nome-cliente { font-size: 0.875rem; color: var(--cor-texto-secundario); }
+.detalhes-pedido .horario-pedido { font-size: 0.75rem; color: var(--cor-texto-suave); }
+
+.preco-total-pedido { text-align: right; }
+.preco-total-pedido p { font-size: 1.5rem; font-weight: 600; color: var(--vermelho-mcdonalds); }
+
+/* Caixa interna de Itens do Pedido */
+.caixa-itens-pedido {
+    background-color: var(--cor-fundo-tela);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.caixa-itens-pedido .titulo-secao-interna { font-size: 0.875rem; font-weight: 500; margin-bottom: 8px; color: var(--cor-texto-principal); }
+.lista-linhas-produtos { display: flex; flex-direction: column; gap: 4px; }
+.lista-linhas-produtos p { font-size: 0.875rem; color: #374151; }
+
+/* Subgrade de informações adicionais */
+.grade-infos-adicionais {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.caixa-informativa { padding: 12px; border-radius: 8px; font-size: 0.875rem; }
+.caixa-informativa .titulo-secao-interna { font-weight: 500; margin-bottom: 4px; }
+.caixa-informativa p { color: #374151; }
+.caixa-informativa .texto-secundario-interno { font-size: 0.75rem; color: var(--cor-texto-secundario); margin-top: 4px; }
+
+.bloco-dados-entrega { background-color: var(--fundo-azul-entrega); }
+.bloco-dados-entrega .titulo-secao-interna { color: var(--texto-azul-entrega); }
+
+.bloco-dados-pagamento { background-color: var(--fundo-verde-pagamento); }
+.bloco-dados-pagamento .titulo-secao-interna { color: var(--texto-verde-pagamento); }
+
+/* Rodapé do Card com Ações */
+.grupo-botoes-acao {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.grupo-botoes-acao .botao { height: 40px; flex: 1; }
+
+
+/* ==========================================
+   RESPONSIVIDADE (APENAS >= 1100px)
+   ========================================== */
+@media (min-width: 1100px) {
+    .grade-resumos { 
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .grade-infos-adicionais { 
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}

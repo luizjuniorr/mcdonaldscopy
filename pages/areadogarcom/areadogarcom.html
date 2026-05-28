@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's - Área do Garçom</title>
+    <link rel="stylesheet" href="areadogarcom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="topo-pagina">
+        <div class="limitador-largura conteudo-topo">
+            <div>
+                <h1>McDonald's - Área do Garçom</h1>
+                <p>Sistema de Gerenciamento de Pedidos</p>
+            </div>
+            <button class="botao botao-sair">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                Sair
+            </button>
+        </div>
+    </header>
+
+    <main class="limitador-largura conteudo-principal">
+        
+        <div class="bloco-boas-vindas">
+            <h2>Olá, Garçom! 👨‍🍳</h2>
+            <p>Gerencie os pedidos e atenda seus clientes</p>
+        </div>
+
+        <div class="grade-resumos">
+            <div class="card-resumo card-resumo-pedidos">
+                <div class="topo-card-resumo">
+                    <i class="fa-solid fa-clipboard-list"></i>
+                    <span class="valor-indicador">3</span>
+                </div>
+                <p>Pedidos Hoje</p>
+            </div>
+
+            <div class="card-resumo card-resumo-pendentes">
+                <div class="topo-card-resumo">
+                    <i class="fa-solid fa-box"></i>
+                    <span class="valor-indicador">2</span>
+                </div>
+                <p>Pendentes</p>
+            </div>
+
+            <div class="card-resumo card-resumo-total">
+                <div class="topo-card-resumo">
+                    <i class="fa-solid fa-users"></i>
+                    <span class="valor-indicador">3</span>
+                </div>
+                <p>Total Pedidos</p>
+            </div>
+
+            <div class="card-resumo card-resumo-vendas">
+                <div class="topo-card-resumo">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span class="valor-indicador">R$ 142.70</span>
+                </div>
+                <p>Vendas Hoje</p>
+            </div>
+        </div>
+
+        <div>
+            <div class="topo-lista-pedidos">
+                <h3>Todos os Pedidos</h3>
+                <span class="etiqueta-status etiqueta-contador">3 total</span>
+            </div>
+
+            <div class="lista-pedidos">
+
+                <div class="card-pedido">
+                    <div class="topo-card-pedido">
+                        <div class="bloco-info-pedido">
+                            <div class="icone-pedido-circulo">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </div>
+                            <div class="detalhes-pedido">
+                                <div class="linha-titulo-pedido">
+                                    <h4>Pedido #9a8b7c</h4>
+                                    <span class="etiqueta-status etiqueta-novo">Novo</span>
+                                </div>
+                                <p class="nome-cliente">Cliente: João Silva</p>
+                                <p class="horario-pedido">27/05/2026, 12:30:15</p>
+                            </div>
+                        </div>
+                        <div class="preco-total-pedido">
+                            <p>R$ 54.80</p>
+                        </div>
+                    </div>
+                    
+                    <div class="caixa-itens-pedido">
+                        <p class="titulo-secao-interna">Itens:</p>
+                        <div class="lista-linhas-produtos">
+                            <p>1x Big Mac Oferta Média - R$ 34.90</p>
+                            <p>1x Sundae de Chocolate - R$ 19.90</p>
+                        </div>
+                    </div>
+
+                    <div class="grade-infos-adicionais">
+                        <div class="caixa-informativa bloco-dados-entrega">
+                            <p class="titulo-secao-interna">Entrega:</p>
+                            <p>Entrega na Mesa</p>
+                            <p class="texto-secundario-interno">Mesa 14 - Salão Principal</p>
+                        </div>
+                        <div class="caixa-informativa bloco-dados-pagamento">
+                            <p class="titulo-secao-interna">Pagamento:</p>
+                            <p>Cartão de Crédito (App)</p>
+                        </div>
+                    </div>
+
+                    <div class="grupo-botoes-acao">
+                        <button class="botao botao-aceitar">
+                            <i class="fa-regular fa-circle-check"></i> Aceitar Pedido
+                        </button>
+                        <button class="botao botao-cancelar">
+                            <i class="fa-regular fa-circle-xmark"></i> Cancelar
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-pedido">
+                    <div class="topo-card-pedido">
+                        <div class="bloco-info-pedido">
+                            <div class="icone-pedido-circulo">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </div>
+                            <div class="detalhes-pedido">
+                                <div class="linha-titulo-pedido">
+                                    <h4>Pedido #3d2e1f</h4>
+                                    <span class="etiqueta-status etiqueta-preparando">Preparando</span>
+                                </div>
+                                <p class="nome-cliente">Cliente: Maria Oliveira</p>
+                                <p class="horario-pedido">27/05/2026, 12:25:00</p>
+                            </div>
+                        </div>
+                        <div class="preco-total-pedido">
+                            <p>R$ 42.00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="caixa-itens-pedido">
+                        <p class="titulo-secao-interna">Itens:</p>
+                        <div class="lista-linhas-produtos">
+                            <p>2x McChicken - R$ 30.00</p>
+                            <p>1x Batata Frita Média - R$ 12.00</p>
+                        </div>
+                    </div>
+
+                    <div class="grade-infos-adicionais">
+                        <div class="caixa-informativa bloco-dados-entrega">
+                            <p class="titulo-secao-interna">Entrega:</p>
+                            <p>Retirada no Balcão</p>
+                        </div>
+                        <div class="caixa-informativa bloco-dados-pagamento">
+                            <p class="titulo-secao-interna">Pagamento:</p>
+                            <p>Pix</p>
+                        </div>
+                    </div>
+
+                    <div class="grupo-botoes-acao">
+                        <button class="botao botao-pronto">
+                            <i class="fa-regular fa-circle-check"></i> Marcar como Pronto
+                        </button>
+                    </div>
+                </div>
+
+                <div class="card-pedido">
+                    <div class="topo-card-pedido">
+                        <div class="bloco-info-pedido">
+                            <div class="icone-pedido-circulo">
+                                <i class="fa-solid fa-clipboard-list"></i>
+                            </div>
+                            <div class="detalhes-pedido">
+                                <div class="linha-titulo-pedido">
+                                    <h4>Pedido #4t5y6u</h4>
+                                    <span class="etiqueta-status etiqueta-pronto">Pronto</span>
+                                </div>
+                                <p class="nome-cliente">Cliente: Carlos Souza</p>
+                                <p class="horario-pedido">27/05/2026, 12:15:22</p>
+                            </div>
+                        </div>
+                        <div class="preco-total-pedido">
+                            <p>R$ 45.90</p>
+                        </div>
+                    </div>
+                    
+                    <div class="caixa-itens-pedido">
+                        <p class="titulo-secao-interna">Itens:</p>
+                        <div class="lista-linhas-produtos">
+                            <p>1x Quarterão com Queijo Oferta - R$ 36.00</p>
+                            <p>1x Coca-Cola Zero 500ml - R$ 9.90</p>
+                        </div>
+                    </div>
+
+                    <div class="grade-infos-adicionais">
+                        <div class="caixa-informativa bloco-dados-entrega">
+                            <p class="titulo-secao-interna">Entrega:</p>
+                            <p>Entrega na Mesa</p>
+                            <p class="texto-secundario-interno">Mesa 05</p>
+                        </div>
+                        <div class="caixa-informativa bloco-dados-pagamento">
+                            <p class="titulo-secao-interna">Pagamento:</p>
+                            <p>Dinheiro</p>
+                        </div>
+                    </div>
+
+                    <div class="grupo-botoes-acao">
+                        <button class="botao botao-entregue">
+                            <i class="fa-regular fa-circle-check"></i> Marcar como Entregue
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

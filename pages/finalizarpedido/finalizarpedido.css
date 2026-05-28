@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--inter);
+}
+
+:root {
+    --vermelho: #DA291C;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --amarelo: #f0b100;
+    --cinza: #4a5565;
+    --cinza-claro: #e5e7eb;
+
+    --cinza-fundobusca: #f3f3f5;
+    --cinza-fundofinalizarpedido: #f9fafb;
+    --cinza-fundocard: #f7f8f9;
+    --fundocard-amarelo: #fefbe2;
+    --fundocard-red: #ffecec;
+
+    --vermelho-hover: #c10007;
+
+    --arial: "Arial", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --noto-sans: "Noto Sans", sans-serif;
+    --inter: "Inter", sans-serif;
+}
+
+body{
+    background: var(--cinza-fundobusca);
+}
+
+.headerfinalziarpedido {
+    width: 100%;
+    padding: 15px;
+    top: 0;
+    padding-bottom: 15px;
+    background: var(--branco);
+    border-bottom: 3px solid var(--cinza-claro);
+
+    && p {
+        padding: 5px;
+    }
+}
+
+.headerfinalziarpedido p:hover {
+    width: fit-content;
+    background: var(--cinza-claro);
+    
+}
+
+.titulofinalizarpedido {
+    padding-inline: 15px;
+    
+    margin-bottom: 20px;
+}
+
+.titulofinalizarpedido h2 {
+    color: var(--vermelho);
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.titulofinalizarpedido strong {
+    color: var(--preto);
+}
+
+.metododeentrega {
+    background: var(--branco);
+
+    margin-inline: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--cinza-claro);
+}
+
+.metododeentrega h3{
+    
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.metododeentrega .opcaodeentrega{
+    display: flex;
+    align-items: center;
+    
+    padding: 15px;
+    border-radius: 10px;
+    border: 2px solid var(--cinza-claro);
+    min-height: 94px;
+    min-width: 324px;
+    gap: 5px;
+
+    margin-bottom: 15px;
+}
+
+.metododeentrega .opcaodeentrega.pressionado {
+    border: 2px solid var(--vermelho);
+    background: var(--fundocard-red);
+}
+
+.metododeentrega .opcaodeentrega .textoopcaodeentrega{
+    padding-inline: 15px;
+}
+
+.metododeentrega .opcaodeentrega img {
+    height: 30px;
+}
+
+.metododeentrega .opcaodeentrega .tituloentrega {
+    font-weight: 600;
+}
+
+.metododeentrega .opcaodeentrega .descricaoentrega {
+    color: var(--cinza);
+}
+
+.enderecodeentrega {
+    
+    margin-top: 15px;
+    background: var(--cinza-fundobusca);
+    padding: 18px;
+    border-radius: 15px;
+}
+
+.enderecodeentrega h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.inputendereco {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.inputendereco label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.inputendereco input {
+    width: 100%;
+    height: 38px;
+    border: none;
+    outline: none;
+    background: #ececef;
+    border-radius: 8px;
+    padding-inline: 14px;
+
+    font-size: 14px;
+    
+}
+
+.duplo {
+    display: flex;
+    gap: 15px;
+}
+
+.formadepagamento {
+    background: var(--branco);
+
+    margin-top: 15px;
+    margin-inline: 15px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid var(--cinza-claro);
+    
+}
+
+.formadepagamento h2{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.formadepagamento .tipodepagamento {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    margin-bottom: 15px;
+
+    border: 2px solid var(--cinza-claro);
+    border-radius: 10px;
+}
+
+.formadepagamento .tipodepagamento.pressionado {
+    border: 2px solid var(--vermelho);
+    background: var(--fundocard-red);
+}
+
+.formadepagamento .tipodepagamento img {
+    height: 25px;
+}
+
+.dadosdocartao {
+    background: var(--cinza-fundobusca);
+    padding: 18px;
+    border-radius: 15px;
+    font-family: var(--inter);
+    margin-top: 15px;
+}
+
+.dadosdocartao h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.dadosdocartao > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.dadosdocartao label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.dadosdocartao input {
+    width: 100%;
+    height: 40px;
+
+    border: none;
+    outline: none;
+
+    background: #ececef;
+
+    border-radius: 8px;
+
+    padding-inline: 14px;
+
+    font-size: 14px;
+    font-family: var(--inter);
+}
+
+.dadosdocartao input::placeholder {
+    color: var(--cinza);
+}
+
+.dadosdocartao .duplacartao {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.resumopedido {
+    background: var(--branco);
+
+    margin: 15px;
+    padding: 25px;
+
+    border-radius: 18px;
+
+    border: 1px solid var(--cinza-claro);
+
+    font-family: var(--inter);
+}
+
+.resumopedido h3 {
+    font-size: 22px;
+    font-weight: 600;
+
+    margin-bottom: 35px;
+}
+
+.itempedido {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 35px;
+}
+
+.itempedido p:first-child {
+    color: var(--cinza);
+}
+
+.itempedido p:last-child {
+    font-weight: 600;
+}
+
+.linharesumo {
+    width: 100%;
+    height: 1px;
+
+    background: var(--cinza-claro);
+
+    margin-bottom: 20px;
+}
+
+.valorresumo {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 12px;
+
+    font-size: 18px;
+}
+
+.totalresumo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.totalresumo .ptotal {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.totalresumo .pvalorfinal {
+    font-size: 22px;
+    font-weight: 700;
+
+    color: var(--vermelho);
+}
+
+.botaoconfirmarpedido {
+    width: 100%;
+    height: 55px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: var(--vermelho);
+    color: var(--branco);
+
+    font-size: 20px;
+    font-weight: 700;
+
+    font-family: var(--inter);
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.botaoconfirmarpedido:hover {
+    background: var(--vermelho-hover);
+}
+
+@media (min-width: 1100px){
+
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .containerfinalizarpedido{
+        width: 100%;
+        max-width: 1200px;
+
+        display: flex;
+        gap: 30px;
+        align-items: flex-start;
+
+        padding-inline: 15px;
+    }
+
+    .ladoesquerdo{
+        flex: 2;
+    }
+
+    .ladodireito{
+        flex: 1;
+        position: sticky;
+        top: 20px;
+    }
+
+    .metododeentrega,
+    .formadepagamento{
+        margin-inline: 0;
+    }
+
+    .resumopedido{
+        margin: 0;
+    }
+
+    .titulofinalizarpedido{
+        width: 100%;
+        max-width: 1200px;
+
+        padding-inline: 15px;
+        margin-top: 35px;
+    }
+
+    .headerfinalziarpedido{
+        margin-bottom: 25px;
+    }
+
+}

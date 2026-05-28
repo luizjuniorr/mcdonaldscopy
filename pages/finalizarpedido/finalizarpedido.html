@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="finalizarpedido.css">
+    <script src="finalizarpedido.js" defer></script>
+
+    <title>Finalizar Pedido</title>
+</head>
+
+<body>
+
+    <header class="headerfinalziarpedido">
+        <p onclick="window.location.href='../cardapio/cardapio.html'">
+            ← Voltar ao Menu
+        </p>
+    </header>
+
+    <div class="titulofinalizarpedido">
+        
+    </div>
+
+    <div class="containerfinalizarpedido">
+
+        <div class="ladoesquerdo">
+
+            <section class="metododeentrega">
+
+                <h3>Método de Entrega</h3>
+
+                <form>
+
+                    <div class="opcaodeentrega pressionado">
+
+                        <input type="radio" name="tipodeentrega" checked>
+
+                        <div>
+                            <img src="../../assets/lixeira.png" alt="">
+                        </div>
+
+                        <div class="textoopcaodeentrega">
+                            <p class="tituloentrega">Entrega em Casa</p>
+                            <p class="descricaoentrega">
+                                Receba no conforto da sua casa (+R$ 5,00)
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="opcaodeentrega">
+
+                        <input type="radio" name="tipodeentrega">
+
+                        <div>
+                            <img src="../../assets/lixeira.png" alt="">
+                        </div>
+
+                        <div class="textoopcaodeentrega">
+                            <p class="tituloentrega">Retirar na Loja</p>
+                            <p class="descricaoentrega">
+                                Busque seu pedido na loja
+                            </p>
+                        </div>
+
+                    </div>
+
+                </form>
+
+                <div class="enderecodeentrega">
+
+                    <h3>Endereço de Entrega</h3>
+
+                    <div class="inputendereco">
+                        <label for="cep">CEP</label>
+                        <input type="text" id="cep" placeholder="00000-000">
+                    </div>
+
+                    <div class="inputendereco">
+                        <label for="rua">Rua</label>
+                        <input type="text" id="rua" placeholder="Nome da rua">
+                    </div>
+
+                    <div class="duplo">
+
+                        <div class="inputendereco">
+                            <label for="numero">Número</label>
+                            <input type="text" id="numero" placeholder="123">
+                        </div>
+
+                        <div class="inputendereco">
+                            <label for="complemento">Complemento</label>
+                            <input type="text" id="complemento" placeholder="Apto 101">
+                        </div>
+
+                    </div>
+
+                    <div class="duplo">
+
+                        <div class="inputendereco">
+                            <label for="bairro">Bairro</label>
+                            <input type="text" id="bairro" placeholder="Centro">
+                        </div>
+
+                        <div class="inputendereco">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" id="cidade" placeholder="São Paulo">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="formadepagamento">
+
+                <h2>Forma de Pagamento</h2>
+
+                <form>
+
+                    <div class="tipodepagamento pressionado">
+                        <input type="radio" name="pagamento" checked>
+                        <img src="../../assets/lixeira.png" alt="">
+                        <p>Cartão de Crédito</p>
+                    </div>
+
+                    <div class="tipodepagamento">
+                        <input type="radio" name="pagamento">
+                        <img src="../../assets/lixeira.png" alt="">
+                        <p>Cartão de Débito</p>
+                    </div>
+
+                    <div class="tipodepagamento">
+                        <input type="radio" name="pagamento">
+                        <img src="../../assets/lixeira.png" alt="">
+                        <p>PIX</p>
+                    </div>
+
+                    <div class="tipodepagamento">
+                        <input type="radio" name="pagamento">
+                        <img src="../../assets/lixeira.png" alt="">
+                        <p>Vale Alimentação</p>
+                    </div>
+
+                    <div class="tipodepagamento">
+                        <input type="radio" name="pagamento">
+                        <img src="../../assets/lixeira.png" alt="">
+                        <p>Dinheiro</p>
+                    </div>
+
+                </form>
+
+                <div class="dadosdocartao">
+
+                    <h4>Dados do Cartão</h4>
+
+                    <div>
+                        <label for="numerodocartao">Número do Cartão</label>
+                        <input type="text"
+                            id="numerodocartao"
+                            placeholder="0000 0000 0000 0000">
+                    </div>
+
+                    <div>
+                        <label for="nomedocartao">Nome no Cartão</label>
+                        <input type="text"
+                            id="nomedocartao"
+                            placeholder="NOME COMPLETO">
+                    </div>
+
+                    <div class="duplacartao">
+
+                        <div>
+                            <label for="validade">Validade</label>
+                            <input type="text"
+                                id="validade"
+                                placeholder="MM/AA">
+                        </div>
+
+                        <div>
+                            <label for="cvv">CVV</label>
+                            <input type="text"
+                                id="cvv"
+                                placeholder="000">
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+        <div class="ladodireito">
+
+            <section class="resumopedido">
+
+                <h3>Resumo do Pedido</h3>
+
+                <div class="itempedido">
+                    <p>1x McNuggets 10 unidades</p>
+                    <p>R$ 16,90</p>
+                </div>
+
+                <div class="linharesumo"></div>
+
+                <div class="valorresumo">
+                    <p>Subtotal</p>
+                    <p>R$ 16,90</p>
+                </div>
+
+                <div class="valorresumo">
+                    <p>Taxa de entrega</p>
+                    <p>R$ 5,00</p>
+                </div>
+
+                <div class="totalresumo">
+                    <p class="ptotal">Total</p>
+                    <p class="pvalorfinal">R$ 21,90</p>
+                </div>
+
+                <button class="botaoconfirmarpedido" onclick="window.location.href=`../pedidofinalizado/pedidofinalizado.html`">
+                    Confirmar Pedido
+                </button>
+
+            </section>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

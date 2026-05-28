@@ -1,0 +1,87 @@
+/* Reset básico de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8f9fa; /* Fundo suave para destacar o card */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Principal (Card) */
+.card-container {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 40px 32px;
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    margin: 20px;
+}
+
+/* Container do Ícone */
+.icon-container {
+    width: 100px;
+    height: 100px;
+    background-color: #e6f9f0; /* Fundo verde claro */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 32px auto;
+}
+
+.icon-check {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+/* Tipografia */
+.title {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.greeting {
+    font-size: 15px;
+    color: #4a5568;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.status-message {
+    font-size: 14px;
+    color: #718096;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+/* Caixa de Tempo Estimado */
+.eta-box {
+    background-color: #fefaf0; /* Fundo levemente amarelado */
+    border-radius: 8px;
+    padding: 14px;
+    display: inline-block;
+    width: 100%;
+}
+
+.eta-box p {
+    font-size: 14px;
+    color: #b7791f; /* Texto marrom/dourado escuro */
+    font-weight: 600;
+}
+
+.time-highlight {
+    font-weight: 700;
+}

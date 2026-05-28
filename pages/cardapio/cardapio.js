@@ -171,13 +171,3 @@ botaoFecharCarrinho.addEventListener("click", () => {
     right.classList.remove("aberto")
     header.classList.remove("aberto")
 })
-
-const finalizarpedido = document.querySelector(".finalizarpedido")
-
-function abrirPaginaDeFinalizarPedido(){
-    finalizarpedido.classList.add("aberto")
-}
-
-function fecharPaginaDeFinalizarPedido(){
-    finalizarpedido.classList.remove("aberto")
-}
